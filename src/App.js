@@ -179,7 +179,7 @@ function App() {
 					<Route path={process.env.PUBLIC_URL + "/"}>
 						<Redirect to={process.env.PUBLIC_URL + "/today"} />
 					</Route>
-					<Route path={process.env.PUBLIC_URL + "/today"}>
+					<Route path="/today">
 						<Today
 							isLoading={isLoading}
 							geolocationErrorMessage={geolocationErrorMessage}
