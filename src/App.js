@@ -173,10 +173,10 @@ function App() {
 		<div className="App">
 			<Header />
 			<SearchBar inputValue={city} getSearchInput={getSearchInput} handleSubmit={handleSubmit} />
-			<HashRouter>
+			<HashRouter basename={process.env.PUBLIC_URL}>
 				<ForecastNavigation />
 				<Switch>
-					<Route path={process.env.PUBLIC_URL + "/"} exact>
+					<Route path="/" exact>
 						<Redirect to="/today" />
 					</Route>
 					<Route path="/today">
