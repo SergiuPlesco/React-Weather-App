@@ -3,7 +3,11 @@ import { NavLink } from "react-router-dom";
 const ForecastNavigation = () => {
 	return (
 		<div className="forecast">
-			<NavLink className="forecast-link" activeClassName="active" to="/today">
+			<NavLink
+				className="forecast-link"
+				activeClassName="active"
+				to={process.env.PUBLIC_URL + "/today"}
+			>
 				<p>Today</p>
 			</NavLink>
 			<NavLink className="forecast-link" activeClassName="active" to="/tomorrow">
