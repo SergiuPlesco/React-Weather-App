@@ -176,10 +176,10 @@ function App() {
 			<HashRouter>
 				<ForecastNavigation />
 				<Switch>
-					<Route path="/">
-						<Redirect to="/today" />
+					<Route path={process.env.PUBLIC_URL + "/"}>
+						<Redirect to={process.env.PUBLIC_URL + "/today"} />
 					</Route>
-					<Route path="/today">
+					<Route path={process.env.PUBLIC_URL + "/today"}>
 						<Today
 							isLoading={isLoading}
 							geolocationErrorMessage={geolocationErrorMessage}
