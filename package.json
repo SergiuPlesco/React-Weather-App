@@ -1,6 +1,6 @@
 {
 	"name": "weather",
-	"homepage": "https://sergiuplesco.github.io/react-weather-app/",
+	"homepage": "https://sergiuplesco.github.io/React-Weather-App/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
