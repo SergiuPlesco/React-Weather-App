@@ -33,7 +33,7 @@ function App() {
 
 	const getCity = async (city) => {
 		const APIKEY = process.env.REACT_APP_API_KEY;
-		const cityURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKEY}`;
+		const cityURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKEY}`;
 		const coord = await fetch(cityURL)
 			.then((response) => {
 				if (!response.ok) {
@@ -54,7 +54,7 @@ function App() {
 
 	const getCoord = async (lat, lon) => {
 		const APIKEY = process.env.REACT_APP_API_KEY;
-		const coordURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}`;
+		const coordURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}`;
 		const result = await fetch(coordURL)
 			.then((response) => {
 				if (!response.ok) {
