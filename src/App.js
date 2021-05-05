@@ -173,7 +173,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<SearchBar inputValue={city} getSearchInput={getSearchInput} handleSubmit={handleSubmit} />
-			<HashRouter basename={process.env.PUBLIC_URL}>
+			<HashRouter basename="/">
 				<ForecastNavigation />
 				<Switch>
 					<Route path="/" exact>
