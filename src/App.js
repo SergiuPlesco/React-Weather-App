@@ -177,7 +177,7 @@ function App() {
 				<ForecastNavigation />
 				<Switch>
 					<Route path={process.env.PUBLIC_URL + "/"}>
-						<Redirect to={process.env.PUBLIC_URL + "/today"} />
+						<Redirect to="/today" />
 					</Route>
 					<Route path="/today">
 						<Today
