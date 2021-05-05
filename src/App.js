@@ -176,7 +176,7 @@ function App() {
 			<HashRouter>
 				<ForecastNavigation />
 				<Switch>
-					<Route path="/" exact>
+					<Route path="/">
 						<Redirect to="/today" />
 					</Route>
 					<Route path="/today">
@@ -188,7 +188,7 @@ function App() {
 							timezone={tz}
 						/>
 					</Route>
-					<Route path="/tomorrow" exact>
+					<Route path="/tomorrow">
 						<Tomorrow
 							isLoading={isLoading}
 							geolocationErrorMessage={geolocationErrorMessage}
@@ -197,7 +197,7 @@ function App() {
 							nextDayWeatherDetails={nextDayWeatherDetails}
 						/>
 					</Route>
-					<Route path="/sevendays" exact>
+					<Route path="/sevendays">
 						<Days
 							isLoading={isLoading}
 							geolocationErrorMessage={geolocationErrorMessage}
