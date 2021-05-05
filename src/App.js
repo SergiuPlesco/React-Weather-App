@@ -176,7 +176,7 @@ function App() {
 			<HashRouter>
 				<ForecastNavigation />
 				<Switch>
-					<Route path={process.env.PUBLIC_URL + "/"}>
+					<Route path={process.env.PUBLIC_URL + "/"} exact>
 						<Redirect to="/today" />
 					</Route>
 					<Route path="/today">
