@@ -173,7 +173,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<SearchBar inputValue={city} getSearchInput={getSearchInput} handleSubmit={handleSubmit} />
-			<Router>
+			<HashRouter>
 				<ForecastNavigation />
 				<Switch>
 					<Route path="/" exact>
@@ -207,7 +207,7 @@ function App() {
 						/>
 					</Route>
 				</Switch>
-			</Router>
+			</HashRouter>
 		</div>
 	);
 }
