@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect, HashRouter } from "react-router-dom";
 import "./App.css";
 import ForecastNavigation from "./views/components/ForecastNavigation";
 import SearchBar from "./views/components/SearchBar";
