@@ -201,6 +201,14 @@ body {
 	text-align: right;
 }
 
+.summary-title,
+.weekday,
+.weekday-description,
+.summary-icon,
+.summary-temp {
+	pointer-events: none;
+}
+
 .weekday,
 .weekday-description {
 	font-size: 1.1rem;

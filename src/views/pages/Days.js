@@ -6,6 +6,7 @@ const Days = (props) => {
 
 	const toggleDetails = (e) => {
 		e.target.nextElementSibling.classList.toggle("show");
+		// console.log(e.target);
 	};
 	return (
 		<div className="container">
