@@ -47,7 +47,6 @@ function App() {
 			})
 			.catch((err) => {
 				setError(err.message);
-				console.log("no city");
 			});
 		return coord;
 	};
@@ -66,7 +65,7 @@ function App() {
 				setCity(data.name);
 			})
 			.catch((err) => {
-				console.log(`${err.message}`);
+				setError(err.message);
 			});
 		return result;
 	};
@@ -89,7 +88,6 @@ function App() {
 				setGeolocationErrorMessage(null);
 				setError(null);
 				setIsLoading(false);
-				console.log(data);
 				return data.daily;
 			})
 			.then((daily) => {
@@ -102,7 +100,6 @@ function App() {
 				setIsLoading(false);
 			})
 			.catch((err) => {
-				console.log(`${err.message} `);
 				setError(err.message);
 			});
 	};
